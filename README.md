@@ -1,2 +1,4 @@
-# yet-another-fitness-app
-Yet another one app for fitness
+# tasks-app
+Mobile application for monitoring your tasks
+
+Made with React Native
