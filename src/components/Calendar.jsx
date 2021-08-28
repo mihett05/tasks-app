@@ -34,20 +34,19 @@ function Calendar({ start, end, marked }) {
         isMarked: marked.includes(date),
       });
     }
-    // for (let day = start; day !== end; day.setDate(day.getDate() + 1)) {
-    //   result.push({
-    //     day: day.getDate(),
-    //     month: monthToName[day.getMonth() + 1],
-    //     isMarked: marked.includes(day),
-    //   });
-    // }
-    console.log(result);
     setDates(result);
   }, [start, end, marked]);
 
   return (
     <Box rounded="lg" shadow={5} bg="primary.400">
-      <Text>Календарь</Text>
+      <Text
+        style={{
+          marginLeft: 8,
+          marginTop: 4,
+        }}
+      >
+        Календарь
+      </Text>
       <Center>
         <Flex direction="row">
           {dates.map((v) => (
